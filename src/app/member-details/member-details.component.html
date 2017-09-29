@@ -1,3 +1,11 @@
-<p>
-  member-details works!
-</p>
+<div *ngIf="memberToDisplay | async">
+  <div class="card">
+    <h1 class="card-header">{{(memberToDisplay | async).name}}</h1>
+    <div class="card-block">
+      <h4 class="card-subtitle mb-2 text-muted">{{(memberToDisplay | async).title}}</h4>
+      <p class="card-text">{{(memberToDisplay | async).method}}
+      <br>{{(memberToDisplay | async).role}}
+      <br>{{(memberToDisplay | async).specialization}}</p>
+    </div>
+  </div>
+</div>
