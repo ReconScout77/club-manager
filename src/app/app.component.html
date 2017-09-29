@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <a class="navbar-brand">{{title}}</a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="party">Party</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="about">About</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container main-display">
+  <router-outlet><router-outlet>
