@@ -18,7 +18,8 @@
 
 <label>New Member Specialization:</label>
 <input [(ngModel)]="selectedMember.specialization">
-
-<button class="btn btn-warning" (click)="beginUpdatingMember(selectedMember)">Update</button>
 <br>
-<button class="btn btn-danger" (click)="beginDeletingMember(selectedMember)">Delete</button>
+<div class="d-flex justify-content-between">
+  <button class="btn btn-warning" (click)="beginUpdatingMember(selectedMember)">Update</button>
+  <button class="btn btn-danger" (click)="beginDeletingMember(selectedMember)">Delete</button>
+</div>
