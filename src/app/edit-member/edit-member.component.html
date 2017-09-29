@@ -1,0 +1,22 @@
+<h4>Edit Member</h4>
+
+<label>New Member Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>New Member Title:</label>
+<input [(ngModel)]="selectedMember.title">
+<br>
+
+<label>New Member Method:</label>
+<input [(ngModel)]="selectedMember.method">
+<br>
+
+<label>New Member Role:</label>
+<input [(ngModel)]="selectedMember.role">
+<br>
+
+<label>New Member Specialization:</label>
+<input [(ngModel)]="selectedMember.specialization">
+
+<button class="btn btn-warning" (click)="beginUpdatingMember(selectedMember)">Update</button>

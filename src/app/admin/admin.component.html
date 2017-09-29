@@ -1,34 +1,40 @@
-<h3>Recruit new party member</h3>
+<div class="card">
+  <h3 class="card-header">Recruit new party member</h3>
+  <div class="card-block">
+    <div>
+      <label>Name:</label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+      <label>Title:</label>
+      <br>
+      <input #newTitle>
+    </div>
+
+    <div>
+      <label>Method:</label>
+      <br>
+      <input #newMethod>
+    </div>
+
+    <div>
+      <label>Role:</label>
+      <br>
+      <input #newRole>
+    </div>
+
+    <div>
+      <label>Specialization:</label>
+      <br>
+      <input #newSpecialization>
+    </div>
+
+    <button (click)="submitForm(newName.value, newTitle.value, newMethod.value, newRole.value, newSpecialization.value); newName.value=''; newTitle.value=''; newMethod.value=''; newRole.value=''; newSpecialization.value=''">Recruit!</button>
+  </div>
+</div>
+
 <div>
-  <div>
-    <label>Name:</label>
-    <br>
-    <input #newName>
-  </div>
-
-  <div>
-    <label>Title:</label>
-    <br>
-    <input #newTitle>
-  </div>
-
-  <div>
-    <label>Method:</label>
-    <br>
-    <input #newMethod>
-  </div>
-
-  <div>
-    <label>Role:</label>
-    <br>
-    <input #newRole>
-  </div>
-
-  <div>
-    <label>Specialization:</label>
-    <br>
-    <input #newSpecialization>
-  </div>
-
-  <button (click)="submitForm(newName.value, newTitle.value, newMethod.value, newRole.value, newSpecialization.value); newName.value=''; newTitle.value=''; newMethod.value=''; newRole.value=''; newSpecialization.value=''">Recruit!</button>
+  <app-member-list></app-member-list>
 </div>
