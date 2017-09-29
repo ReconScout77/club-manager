@@ -10,6 +10,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { MemberListComponent } from './member-list/member-list.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { MemberDetailsComponent } from './member-details/member-details.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     MemberListComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    MemberDetailsComponent
   ],
   imports: [
     BrowserModule,
