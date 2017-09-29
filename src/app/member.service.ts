@@ -29,5 +29,10 @@ export class MemberService {
                                 method: localUpdatedMember.method,
                                 role: localUpdatedMember.role,
                                 specialization: localUpdatedMember.specialization});
- }
+  }
+
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 }

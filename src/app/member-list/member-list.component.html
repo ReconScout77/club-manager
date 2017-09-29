@@ -7,8 +7,6 @@
         <h6 class="card-subtitle mb-2 text-muted">{{member.title}}</h6>
         <div *ngIf="currentRoute === '/admin'">
           <app-edit-member [selectedMember]="member"></app-edit-member>
-          <br>
-          <button class="btn btn-danger" (click)="deleteMember()">Delete</button>
         </div>
       </div>
     </div>
